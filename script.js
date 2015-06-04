@@ -13,7 +13,7 @@ function create() {
   game.add.sprite(0,0,'background');
   platforms = game.add.group();
   platforms.enableBody = true;
-  var ground = platforms.create(0.game.world.height - 64, 'platform');
+  var ground = platforms.create(0,game.world.height - 64, 'platform');
   ground.scale.setTo(2,2);
   ground.body.immovable = true;
   
